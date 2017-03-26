@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nike Product Card</title>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="styles/normalize.css"><!-- 2nd priority -->
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="ba-prodact-card">
+	<div class="ba-card_2"></div>
+	<div class="ba-card_3"></div>
+	<header class="ba-header">
+		<div class="ba-container ba-clearfix">
+			<a href="#" class="ba-logo">
+				<img src="images/logo.png" alt="Nike" class="ba-logo__image">
+			</a>
+			<nav class="ba-navigation ba-clearfix">
+				<ul class="ba-navigation__list ba-clearfix">
+					<li class="ba-navigation__item">
+						<a href="#" class="ba-navigation__link">Lifestyle</a>
+					</li>
+					<li class="ba-navigation__item">
+						<a href="#" class="ba-navigation__link ba-navigation__link--active">Running</a>
+					</li>
+					<li class="ba-navigation__item">
+						<a href="#" class="ba-navigation__link">Football</a>
+					</li>
+					<li class="ba-navigation__item">
+						<a href="#" class="ba-navigation__link">Skateboarding</a>
+					</li>
+				</ul>
+				<button class="ba-navigation__toggle">
+					<span class="ba-bar"></span>
+				</button>
+			</nav>
+		</div>
+	</header>
+	<article class="ba-product ba-container ba-clearfix">
+		<div class="ba-product__gallery ba-left ba-slider">
+			<img src="images/main.png" alt="Huarache" class="ba-product__image ba-product__image--main">
+			<ul class="ba-product__controls">
+				<li class="ba-product__controls-item">
+					<button class="ba-product__control">
+						<img src="images/thumb-1.png" alt="" class="ba-product__image">
+					</button>
+				</li>
+				<li class="ba-product__controls-item">
+					<button class="ba-product__control">
+						<img src="images/thumb-2.png" alt="" class="ba-product__image">
+					</button>
+				</li>
+				<li class="ba-product__controls-item">
+					<button class="ba-product__control">
+						<img src="images/thumb-3.png" alt="" class="ba-product__image">
+					</button>
+				</li>
+			</ul>
+		</div>
+		<div class="ba-product__info ba-right">
+			<button class="ba-close">
+				<img class="ba-close__image" src="images/btn_close.png" alt="close">
+			</button>
+			<div class="ba-prodact__label">
+				<p class="ba-prodact-label__text">New</p>
+			</div>
+			<div class="ba-product__slogan">
+				<h2 class="ba-product-slogan__text">The <span class="ba-product-slogan__text--blue">running</span><br> has just begun
+				</h2>
+			</div>
+			<div class="ba-wrap ba-clearfix">
+				<div class="ba-product-title">
+					<h1 class="ba-product__title">Huarache</h1>
+				</div>
+				<div class="star-rating">
+					<div class="star-rating__wrap">
+						<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars">
+						</label>
+						<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars">
+						</label>
+						<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars">
+						</label>
+						<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars">
+						</label>
+						<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars">
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="ba-product__price">
+				$ 200
+			</div>
+			<div class="ba-product__size">
+				<h3 class="ba-product__size-title">Size</h3>
+				<ul class="ba-product__list">
+					<li class="ba-product__item">
+						<button class="ba-product-size__button">
+							7
+						</button>
+					</li class="ba-product__item">
+					<li class="ba-product__item">
+						<button class="ba-product-size__button">
+							8
+						</button>
+					</li>
+					<li class="ba-product__item">
+						<button class="ba-product-size__button">
+							9
+						</button>
+					</li>
+					<li class="ba-product__item">
+						<button class="ba-product-size__button ba-product-size__button--active">
+							10
+						</button>
+					</li>
+					<li class="ba-product__item">
+						<button class="ba-product-size__button">
+							11
+						</button>
+					</li>
+				</ul>
+			</div>
+			<div class="ba-product__buttons">
+				<button class="ba-button__add ba-button">Add to cart</button>
+				<button class="ba-button__wish ba-button">Wishlist</button>
+			</div>
+		</div>
+	</article>
+
+
+
+
+	<script>
+		document.querySelector('.ba-navigation__toggle').addEventListener('click', function() {
+   if (document.querySelector('.ba-bar').classList.contains('animate')) {
+    document.querySelector('.ba-bar').classList.remove('animate');
+   } else {
+    document.querySelector('.ba-bar').classList.add('animate');
+   }
+  });
+	</script>
+</body>
+</html>
